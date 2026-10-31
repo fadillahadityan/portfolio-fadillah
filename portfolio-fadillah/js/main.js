@@ -237,6 +237,24 @@
   var certificateDialog = document.getElementById('certificate-dialog');
   var certificateFrame = document.getElementById('certificate-frame');
   var certificateImage = document.getElementById('certificate-image');
+  /* CV memakai dialog pratinjau dokumen yang sama dengan sertifikat agar tetap di halaman ini. */
+  var cvPreviewButton = document.getElementById('cv-preview');
+  if (cvPreviewButton) {
+    cvPreviewButton.addEventListener('click', function () {
+      var cvPath = cvPreviewButton.getAttribute('data-document-preview');
+      var dialogTitle = document.getElementById('dialog-title');
+      if (!cvPath || !certificateDialog || !certificateFrame) return;
+      if (dialogTitle) dialogTitle.textContent = 'Resume — Fadillah Adityan';
+      certificateFrame.hidden = false;
+      certificateFrame.src = cvPath + '#toolbar=1&navpanes=0&view=FitH';
+      if (certificateImage) {
+        certificateImage.hidden = true;
+        certificateImage.src = '';
+      }
+      if (typeof certificateDialog.showModal === 'function') certificateDialog.showModal();
+      else window.open(cvPath, '_blank', 'noopener');
+    });
+  }
   function closeCertificateDialog() {
     if (certificateDialog && certificateDialog.open) certificateDialog.close();
     if (certificateFrame) certificateFrame.src = 'about:blank';

@@ -14,9 +14,9 @@ Website portofolio statis menggunakan HTML, CSS, dan JavaScript.
 - Pratinjau proyek ABSENKU: `assets/proyek-absenku.jpg`
 - Pratinjau pendataan: `assets/proyek-pendataan.jpg`
 - Karya desain: `assets/proyek-desain.jpg`
-- CV asli milik Anda: `assets/CV-Fadillah-Adityan.pdf` (tambahkan sendiri; file CV contoh tidak disertakan)
+- CV asli milik Anda: `assets/Resume.pdf` (tambahkan sendiri; file CV contoh tidak disertakan)
 
-Pertahankan nama file agar tautan tidak perlu diubah. Untuk tombol **Unduh CV**, salin berkas CV PDF milik Anda ke `assets/CV-Fadillah-Adityan.pdf`. Tombol sudah tersedia, tetapi unduhan baru berfungsi setelah berkas CV asli Anda ditambahkan. Gambar proyek bersifat opsional; jika tidak tersedia, kartu akan menampilkan visual pengganti.
+Pertahankan nama file agar tautan tidak perlu diubah. Untuk tombol **Unduh CV**, salin berkas CV PDF milik Anda ke `assets/Resume.pdf`. Tombol sudah tersedia, tetapi unduhan baru berfungsi setelah berkas CV asli Anda ditambahkan. Gambar proyek bersifat opsional; jika tidak tersedia, kartu akan menampilkan visual pengganti.
 
 ## Dokumen sertifikasi dan pelatihan
 
@@ -35,7 +35,7 @@ Periksa ulang email, nomor telepon, tautan GitHub, pengalaman, keahlian, dan sem
 - Logo teknologi pada bagian Keahlian menggunakan SVG lokal agar tampil konsisten tanpa meminta ikon dari layanan eksternal. Pita logo bergerak ke kanan dan berhenti sementara saat diarahkan dengan kursor.
 - Tombol **Hubungi Saya** pada bagian pembuka menggulir ke bagian kontak di bawah. Tombol **Kirim Email** pada bagian kontak membuka aplikasi email.
 - Menu **Hubungi** di navbar liquid glass dibuat lebih kontras agar mudah ditemukan.
-- Untuk tombol **Unduh CV**, masukkan CV milik sendiri ke `assets/CV-Fadillah-Adityan.pdf`. Tidak ada desain CV buatan yang disertakan.
+- Untuk tombol **Unduh CV**, masukkan CV milik sendiri ke `assets/Resume.pdf`. Tidak ada desain CV buatan yang disertakan.
 
 
 ## Pembaruan tampilan keahlian dan pengalaman
@@ -78,3 +78,13 @@ Bagian dokumen memakai tab ringkas dan kartu horizontal yang dapat digeser. Riwa
 - Kartu dokumen memakai carousel horizontal; geser ke samping untuk melihat dokumen lainnya.
 - Timeline pengalaman memakai satu kolom vertikal responsif, dengan urutan paling lama ke terbaru.
 - Placeholder BNSP belum memiliki tautan PDF sampai dokumen aslinya ditambahkan.
+
+
+## Pembaruan dokumen (31 Oktober 2026)
+- Tombol **Unduh CV** sekarang mengarah ke `assets/Resume.pdf` yang sudah tersedia di folder aset.
+- Dua placeholder sertifikasi BNSP diganti dengan dokumen asli:
+  - BNSP Program Analyst — 06 Maret 2026.
+  - BNSP Multimedia / Desainer Grafis Muda — 06 Oktober 2023.
+- Sertifikat SPHAD 2025 ditambahkan ke kategori **Sertifikat** sebagai pengalaman Surveyor, tanggal 21 Juli 2025.
+- Sampul pratinjau untuk ketiga PDF baru dibuat di `assets/sertifikat/`.
+- Pastikan file PDF dan gambar sampul ikut di-commit bersama `index.html` agar tombol Lihat/Unduh bekerja setelah deployment.
